@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-18T00:48:08.032Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8150981000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.load()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Validar el tipo de cambio del peso y sus porcentajes : positivo en verde y negativo en rojo",
+        "description": "",
+        "id": "tipo-de-cambio;validar-el-tipo-de-cambio-del-peso-y-sus-porcentajes-:-positivo-en-verde-y-negativo-en-rojo",
+        "after": [
+          {
+            "result": {
+              "duration": 687959800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9834011100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Estoy en la pagina de El Universal",
+            "match": {
+              "location": "HomeSteps.Estoy_en_la_pagina_de_El_Universal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8259073100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Elijo la opcion \"ENGLISH\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ENGLISH\"",
+                  "offset": 16
+                }
+              ],
+              "location": "HomeSteps.elijoLaOpcion(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 191751500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Valido que este en la página de \"English\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 32
+                }
+              ],
+              "location": "HomeSteps.validoQueEsteEnLaPáginaDe(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20606666700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "valido que el tipo de cambio y los porcentajes sean desplegados",
+            "match": {
+              "location": "HomeSteps.validoQueElTipoDeCambioYLosPorcentajesSeanDesplegados()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98874800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "y que el porcentaje negativo aparezca en rojo y el porcentaje positivo aparezca en verde",
+            "match": {
+              "location": "HomeSteps.yQueElPorcentajeNegativoAparezcaEnRojoYElPorcentajePositivoAparezcaEnEnVerde()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Tipo de Cambio",
+    "description": "",
+    "id": "tipo-de-cambio",
+    "keyword": "Feature",
+    "uri": "file:src/test/Resources/features/tipodecambio.feature",
+    "tags": []
+  }
+]
